@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management - EJS CRUD</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>📚 Student List</h1>
+
+        <a href="/add" class="add-btn">➕ Add New Student</a>
+
+        <% if (studentList.length === 0) { %>
+            <div class="empty-state">
+                <p>No students found</p>
+                <p>Click "Add New Student" to get started!</p>
+            </div>
+        <% } else { %>
+            <ul>
+                <% studentList.forEach((s) => { %>
+                    <li>
+                        <span><%= s.name %></span>
+                        <div>
+                            <a href="/edit/<%= s.id %>">✏️ Edit</a>
+                            <a href="/delete/<%= s.id %>" 
+                               onclick="return confirm('Are you sure you want to delete this student?')">
+                                🗑️ Delete
+                            </a>
+                        </div>
+                    </li>
+                <% }); %>
+            </ul>
+        <% } %>
+    </div>
+</body>
+
+</html>
