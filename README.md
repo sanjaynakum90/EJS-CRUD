@@ -53,15 +53,18 @@ EJS-CRUD/
 
 ### Student List
 
-![Student List](./Student-Management-EJS-CRUD-02-06-2026_04_16_PM.png)
+<img width="1920" height="869" alt="image" src="https://github.com/user-attachments/assets/bf366db4-9d2c-4aa1-8450-479aa9a7a7eb" />
+
 
 ### Add New Student
 
-![Add Student](./Add-Student-Student-Management-02-06-2026_04_17_PM.png)
+<img width="1920" height="869" alt="image" src="https://github.com/user-attachments/assets/64426b51-4faa-428a-8814-3de1f7a955b0" />
+
 
 ### Edit Student
 
-![Edit Student](./Edit-Student-Student-Management-02-06-2026_04_16_PM.png)
+<img width="1920" height="869" alt="image" src="https://github.com/user-attachments/assets/11c78c68-80ba-479b-8ea5-3d0fa97a47e8" />
+
 
 * **index.ejs** → Displays the list of students
 * **add.ejs** → Form to add a new student
